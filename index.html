@@ -24,29 +24,30 @@
             
                 <!-- Voci principali -->
                 <ul class="list-none">
-                    <li class="mb-2 flex align-center">
+                    <li class="mb-2 flex align-center  nav-item home-item">
                         <img src="img/home.svg" alt="Icona Home" class="mr-2 w-15"> 
-                        <a href="#" class="txt-bianco decoration-no">Home</a>
+                        <a href="#" class="txt-grigio decoration-no">Home</a>
                     </li>
-                    <li class="mb-2 flex align-center">
+                    <li class="mb-2 flex align-center nav-item ">
                         <img src="img/search.svg" alt="Icona Cerca" class="mr-2 w-15"> 
-                        <a href="#" class="txt-bianco decoration-no">Cerca</a>
+                        <a href="#" class="txt-grigio decoration-no">Cerca</a>
                     </li>
-                    <li class="mb-2 flex align-center">
+                    <li class="mb-2 flex align-center nav-item"  >
                         <img src="img/libreria.svg" alt="Icona Libreria" class="mr-2 w-15"> 
-                        <a href="#" class="txt-bianco decoration-no">La tua Libreria</a>
+                        <a href="#" class="txt-grigio decoration-no">La tua Libreria</a>
                     </li>
                 </ul>
+                
             
                 <!-- Sezioni separate, esempio Playlist personalizzate -->
-                <h3 class="mt-5 mb-2 bold txt-bianco flex align-center">PLAYLIST</h3>
-                <ul class="list-none">
+                <h3 class="mt-5 mb-2 bold txt-bianco flex align-center ml-2">PLAYLIST</h3>
+                <ul class="list-none ml-2">
                     <li class="mb-2"><a href="#" class="txt-grigio decoration-no"> <i class="fas fa-plus txt-nero mr-2 bg-grigio"></i>Crea Playlist </a></li>
-                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no">Nuova Playlist</a></li>
-                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no">Nuova Playlist</a></li>
-                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no">Nuova Playlist</a></li>
-                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no">Nuova Playlist</a></li>
-                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
                     
                 </ul>
     
@@ -74,61 +75,79 @@
             
             <nav class="p-3 text-center">
                 <ul class="list-none flex justify-center">
-                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no" style="font-size: large;">info</a></li>
-                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no" style="font-size: large;">info</a></li>
-                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no" style="font-size: large;">info</a></li>
-                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no" style="font-size: large;">info</a></li>
-                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no" style="font-size: large;">info</a></li>
-                    <li><a href="#" class="txt-grigio decoration-no" style="font-size: large;">info</a></li>
+                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no L-font green-item">IN EVIDENZA</a></li>
+                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no ">PODCAST</a></li>
+                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no ">CLASSIFICHE</a></li>
+                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no ">GENERI E MOOD</a></li>
+                    <li class="mr-3"><a href="#" class="txt-grigio decoration-no ">NUOVE USCITE</a></li>
+                    <li><a href="#" class="txt-grigio decoration-no L-font" >SCOPRI</a></li>
                 </ul>
             </nav>
 
             <section class="p-3">
                 
-                <h2 class="mb-4 bold txt-bianco">Titolo Sezione</h2>
+                <h2 class="mb-4 bold txt-bianco">Recentli Played</h2>
             
                 <!-- Cards -->
                 <div class="flex">
                     <!-- Card 1 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/metal_lifting.jpg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <div class="image-container">
+                            <img src="img/metal_lifting.jpg" alt="Immagine Canzone 1" class="w-100">
+                            <i class="fa-regular fa-circle-play play-icon xL-font"></i>
+                        </div>
+                        <h3 class="mt-2 bold txt-bianco">Heavy metal </h3>
+                        <p class="txt-grigio">Autore </p>
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/stranger.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <div class="image-container">
+                            <img src="img/stranger.jpeg" alt="Immagine Canzone 1" class="w-100">
+                            <i class="fa-regular fa-circle-play play-icon xL-font"></i>
+                        </div>
+                        <h3 class="mt-2 bold txt-bianco">Stranger Things, Vol. 1 (a netflix original series Soundtruck)</h3>
+                        <p class="txt-grigio">Autore </p>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/aquietplace.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <div class="image-container">
+                            <img src="img/aquietplace.jpeg" alt="Immagine Canzone 1" class="w-100">
+                            <i class="fa-regular fa-circle-play play-icon xL-font"></i>
+                        </div>
+                        <h3 class="mt-2 bold txt-bianco">A quiet place </h3>
+                        <p class="txt-grigio">Autore </p>
                     </div>
 
                     <!-- Card 4 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/split.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <div class="image-container">
+                            <img src="img/split.jpeg" alt="Immagine Canzone 1" class="w-100">
+                            <i class="fa-regular fa-circle-play play-icon xL-font"></i>
+                        </div>
+                        <h3 class="mt-2 bold txt-bianco">split </h3>
+                        <p class="txt-grigio">Autore </p>
                     </div>
 
                     <!-- Card 5 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/cure.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <div class="image-container">
+                            <img src="img/cure.jpeg" alt="Immagine Canzone 1" class="w-100">
+                            <i class="fa-regular fa-circle-play play-icon xL-font"></i>
+                        </div>
+                        <h3 class="mt-2 bold txt-bianco">A cure for welness </h3>
+                        <p class="txt-grigio">Autore </p>
                     </div>
 
                     <!-- Card 6 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/sinister.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <div class="image-container">
+                            <img src="img/sinister.jpeg" alt="Immagine Canzone 1" class="w-100">
+                            <i class="fa-regular fa-circle-play play-icon xL-font"></i>
+                        </div>
+                        <h3 class="mt-2 bold txt-bianco">sinister </h3>
+                        <p class="txt-grigio">Autore </p>
                     </div>
 
                     
@@ -138,23 +157,22 @@
 
             <section class="p-3">
                 
-                <h2 class=" bold txt-bianco">Titolo Sezione</h2>
-                <p class="txt-grigio mb-4">Autore 1</p>
+                <h2 class=" bold txt-bianco">Creato for Jhon</h2>
+                <p class="txt-grigio mb-4">Più ascolti, più accurati saranno i suggerimenti </p>
             
                 <!-- Cards -->
                 <div class="flex">
                     <!-- Card 1 -->
                     <div class="card mr-4 w-15">
                         <img src="img/radar.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <h3 class="mt-2 bold txt-bianco">Release Radar </h3>
+                        
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="card w-15 mr-3">
                         <img src="img/mixdaily.jpeg" alt="Immagine Canzone 1" class="w-100">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <h3 class="mt-2 bold txt-bianco">Daily Mix 1 </h3>
                     </div>    
 
                 </div>
@@ -163,23 +181,23 @@
 
             <section class="p-3">
                 
-                <h2 class=" bold txt-bianco">Titolo Sezione</h2>
-                <p class="txt-grigio mb-4">Autore 1</p>
+                <h2 class=" bold txt-bianco">Artisti più popolari</h2>
+                <p class="txt-grigio mb-4">AutorePiù ascolti, più accurati saranno i suggerimenti  </p>
             
                 <!-- Cards -->
                 <div class="flex">
                     <!-- Card 1 -->
                     <div class="card mr-4 w-15">
                         <img src="img/einaudi.jpeg" alt="Immagine Canzone 1" class="w-100 border-cerchio">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <h3 class="mt-2 bold txt-bianco">Ludovico Einaudi </h3>
+                        
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="card w-15 mr-3">
                         <img src="img/youg.jpeg" alt="Immagine Canzone 1" class="w-100 border-cerchio">
-                        <h3 class="mt-2 bold txt-bianco">Titolo Canzone 1</h3>
-                        <p class="txt-grigio">Autore 1</p>
+                        <h3 class="mt-2 bold txt-bianco">Lana del Rey </h3>
+                        
                     </div>    
 
                 </div>
@@ -193,35 +211,56 @@
 
         
     </main>
-    <footer class="p-3  flex align-center space-b">
-        <!-- Preview del brano a sinistra -->
-        <div class="flex align-center mr-4">
-            <img src="img/metal_lifting.jpg" alt="Anteprima brano" class="mr-2 w-15">
-            <div>
-                <h5 class="txt-bianco">Nome Canzone</h5>
-                <div class="flex align-center">
-                    <p class="txt-grigio s-font mr-2">Nome Artista</p>
-                    <i class="fas fa-heart txt-bianco ml-5 mr-2"></i>
-                    <i class="fas fa-folder-open txt-bianco"></i>
+    
+    <footer class="flex align-center">
+
+        <div class="footer-left h-100 flex align-center">    
+            <img src="img/sinister.jpeg" alt="song-image" class="h-75 w-15">
+            <div class=" flex column flex-nowrap pl-3 ">
+                <div class="played-song-title">Sinister</div>
+                <div class="song-subtitle txt-grigio s-font">Nome brano</div>
+            </div>
+            <div class=" ml-5">
+                <i class="fa-regular fa-heart L-font txt-grigio pr-2"></i>
+                <i class="fa-regular fa-folder L-font txt-grigio pr-2"></i>
+            </div>   
+        </div>
+
+        <div class="footer-mid h-100 flex column align-center">
+            <div class="footer-mid-top flex align-center justify-center h-50 w-45 mt-2">
+                <i class="fa-solid fa-shuffle L-font"></i>
+                <i class="fa-solid fa-backward-step L-font"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step L-font"></i>
+                <i class="fa-solid fa-rotate-right L-font"></i>
+            </div>
+            <div class=" h-50 w-100 flex align-center mb-2">
+                <div class="bold s-font">
+                    0:25
+                </div>
+                <div class="time-bar w-100 border-radius">
+                    <div class="time-bar-passed w-25 border-radius">
+                        <div class="circle-time border-cerchio"></div>
+                    </div>  
+                    
+                </div>
+                <div class="bold s-font">
+                    4:35
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-right flex align-center justify-end">
+            <i class="fas fa-list s-font pr-3"></i>
+            <i class="fas fa-desktop s-font pr-3"></i>
+            <i class="fas fa-volume-up s-font pr-3"></i>
+            <div class="time-bar w-100 border-radius time-bar-left">
+                <div class="time-bar-passed border-radius time-bar-passed-left w-45">
+                    <div class="circle-time border-cerchio"></div>
                 </div>
             </div>
         </div>
         
-        <!-- Player centrale -->
-        <div class="flex align-center mr-4">
-            <i class="fas fa-step-backward txt-bianco mr-2"></i>
-            <i class="fas fa-pause txt-bianco mr-2"></i>
-            <i class="fas fa-step-forward txt-bianco mr-2"></i>
-            <div class="w-60 bg-grigio" style="height: 2px;"></div>
-        </div>
-        
-        <!-- Icone a destra -->
-        <div class="flex align-center">
-            <i class="fas fa-bars txt-bianco mr-2"></i>
-            <i class="fas fa-desktop txt-bianco mr-2"></i>
-            <i class="fas fa-volume-up txt-bianco mr-2"></i>
-            <div class="w-15 bg-grigio" style="height: 2px;"></div>
-        </div>
     </footer>
     
         

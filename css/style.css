@@ -17,6 +17,8 @@ body {
     color: white;
 }
 
+
+/* struttura */
 main {
     height: calc(100% - var(--footer-height));
     display: flex;
@@ -41,6 +43,95 @@ main > nav, main > section {
     overflow-y: auto; 
 }
 
+/* nav laterale hover */
+.nav-item img, .nav-item a {
+    margin-left: 10px; 
+}
+
+.home-item {
+    position: relative; 
+}
+
+
+.list-none li a:hover {
+    color: white;
+}
+
+.home-item::before {
+    content: "";
+    background: rgb(44, 190, 44);
+    height: 20px;
+    width: 3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+
+/*nav destra main  */
+.green-item {
+    position: relative;
+}
+
+.green-item::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: rgb(44, 190, 44);
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* hover button */
+
+
+button {
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    border: solid;
+    transform: scale(1.10); 
+    cursor: pointer; 
+}
+
+
+/* recently played */
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform 0.3s ease, filter 0.3s ease;  
+}
+
+.card:hover img {
+    transform: scale(1.1);  
+    filter: brightness(0.3);  
+}
+
+.play-icon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em !important; 
+    color: white;  
+    opacity: 0;  
+    transition: opacity 0.3s ease;  
+    pointer-events: none;
+}
+
+.card:hover .play-icon {
+    opacity: 1;  
+}
 
 
 
@@ -49,13 +140,110 @@ main > nav, main > section {
 
 
 
-
-
-
-
+/* footer */
 
 footer {
     height: var(--footer-height);
     background: rgb(50, 50, 50);
 }
+
+
+
+.footer-right {
+    height: 70px;
+    flex-grow: 1;
+}
+
+.footer-left {
+    margin-left: 15px;
+    flex-grow: 1;
+}
+
+
+
+.song-subtitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.fa-heart:hover,
+.fa-folder:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.footer-mid {
+    flex-grow: 2;
+    margin: 0 15px;
+}
+
+
+
+.footer-mid-top i {
+    
+    padding: 0 0.5rem;
+}
+
+i.fa-circle-play {
+    padding: 0 1.3rem;
+    font-size: 2.2rem;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+
+
+
+.time-bar {
+    margin: 0 1.3rem;
+    height: 5px;
+    background-color: #5a5a5a;
+}
+
+
+.time-bar-passed {
+    position: relative;
+    height: 5px;
+    background-color: #c1c1c1;
+}
+.time-bar-passed:hover {
+    background-color: yellowgreen;
+}
+
+.time-bar-left {
+    max-width: 90px;
+    min-width: 70px;
+    margin: 0 10px
+}
+
+
+
+.time-bar-passed-left:hover {
+    height: 5px;
+    background-color: yellowgreen;
+}
+
+.circle-time {
+    position: absolute;
+    right: 0;
+    bottom: -100%;
+    transform: translate(50%);
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.time-bar-passed:hover .circle-time {
+    opacity: 1;
+}
+
+
 

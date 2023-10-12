@@ -91,16 +91,19 @@
 .p-5 { padding: 2rem; }
 
 /* ======= Heights ======= */
+.h-10 { height: 10%; }
 .h-25 { height: 25%; }
 .h-50 { height: 50%; }
 .h-75 { height: 75%; }
 .h-100 { height: 100%; }
 
 /* ======= Widths ======= */
+.w-10 { width: 10%;}
 .w-15 { width: 15%;}
 .w-25 { width: 25%; }
 .w-33 { width: 33%;}
 .w-35 { width: 35%;}
+.w-45 { width: 45%;}
 .w-50 { width: 50%; }
 .w-60 { width: 60%; }
 .w-75 { width: 75%; }
@@ -115,7 +118,7 @@
 .space-b {justify-content: space-between;} 
 .center-block { margin-left: auto; margin-right: auto; }   
 .justify-center {justify-content: center;}
-.justify-end { justify-content: endf;}
+.justify-end { justify-content:flex-end;}
 .align-center {align-items: center;}
 .align-start { align-items: flex-start;}
 /* ======= Display ======= */
@@ -123,6 +126,7 @@
 .inline { display: inline; }
 .inline-block { display: inline-block; }
 .flex { display: flex; }
+.flex-nowrap  {flex-wrap: nowrap;}
 .flex-wrap{flex-wrap: wrap;}
 .flex-start{ justify-content: flex-start;}
 .column { flex-direction: column;}
@@ -162,7 +166,7 @@
 
 /* ======= Text Colors ======= */
 .txt-blu { color: #007BFF; }
-.txt-grigio { color: #6c757d; }
+.txt-grigio { color: #5a5a5a; }
 .txt-verde { color: #28a745; }
 .txt-giallo { color: #ffc107; }
 .txt-rosso { color: #dc3545; }
