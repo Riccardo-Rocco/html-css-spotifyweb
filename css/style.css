@@ -1,6 +1,11 @@
 :root {
     --footer-height: 90px;
     --navbar-width: 12rem;
+    --small-navbar-width: 55px; 
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent; 
 }
 
 
@@ -10,11 +15,13 @@
     margin: 0;
 }
 
-body {
+body, html {
     font-family: sans-serif;
     height: 100vh;
     background: #222;
     color: white;
+
+
 }
 
 
@@ -43,7 +50,7 @@ main > nav, main > section {
     overflow-y: auto; 
 }
 
-/* nav laterale hover */
+/* nav laterale + hover */
 .nav-item img, .nav-item a {
     margin-left: 10px; 
 }
@@ -69,6 +76,17 @@ main > nav, main > section {
     margin-right: 10px;
 }
 
+.Playlist {
+    max-height: 170px; 
+    overflow-y: auto;
+}
+
+
+
+.profilo-img{
+    width: 15px;
+    height: 22px;
+}
 
 /*nav destra main  */
 .green-item {
@@ -87,6 +105,17 @@ main > nav, main > section {
     transform: translateX(-50%);
 }
 
+
+.nav-selection {
+    text-align: center;
+}
+
+.nav-selection li {
+    display: inline-block;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+}
+
 /* hover button */
 
 
@@ -101,11 +130,21 @@ button:hover {
 }
 
 
-/* recently played */
-
+/* recently played e card generali */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: start;
+}
 .card {
     position: relative;
     overflow: hidden;
+    min-width: 160px; 
+    max-width: 200px; 
+    flex-basis: calc(100% / 6 - 2%);
+    flex-grow: 1;
+    margin-right: 2%;
+
 }
 
 .card img {
@@ -139,7 +178,6 @@ button:hover {
 
 
 
-
 /* footer */
 
 footer {
@@ -157,6 +195,12 @@ footer {
 .footer-left {
     margin-left: 15px;
     flex-grow: 1;
+}
+
+.footer-left img {
+    aspect-ratio: 1; 
+    max-width: 100%; 
+    height: auto;
 }
 
 
@@ -246,4 +290,86 @@ i.fa-circle-play {
 }
 
 
+
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 1001px) {
+    .footer-left img {
+        width: 70x; 
+        height: 70px;
+    }
+    
+}
+
+/* Breakpoint 1000px */
+@media only screen and (max-width: 1000px) {
+    .nav-selection .nav-group:first-child li {
+        padding-right: 1rem; 
+    }
+
+    .nav-selection .nav-group:last-child li {
+        padding-right:
+        2.5rem; 
+    }
+
+    .footer-left img {
+        width: 70px; 
+        height: 70px;
+    }
+
+}
+/* Breakpoint 768px */
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 2%);
+        margin-right: 2%;
+    }
+}
+
+/* Breakpoint 550px */
+@media only screen and (max-width: 550px) {
+    
+       
+    .sidebar-nav {
+        width: var(--small-navbar-width); 
+        padding: 10px 5px;
+    }
+
+    main > section {
+        width: calc(100% - var(--small-navbar-width));  /
+    }
+
+    #spotify-text, .nav-item a, .Playlist1, .Playlist, .download-text span, .user-text span, .divisore {
+        display: none !important;
+    }
+
+    .home-item::before {
+        display: none;
+    }
+
+    .nav-item img {
+        margin: 0;  
+        padding: 0;  
+        width: 100%;
+    }
+    
+   
+    
+
+    .footer-left img {
+        width: 40px;   
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .footer-right i {
+        padding-right: 5px;  
+    }
+   
+    .footer-left i {
+        margin-left: 0%;
+       
+    }
+
+}
 

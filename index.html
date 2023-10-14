@@ -14,17 +14,17 @@
     <main>
 
         <!--nav laterale-->
-        <nav class="p-3 flex column space-b">
+        <nav class="p-3 flex column space-b sidebar-nav">
             
             <div>
-                <h1 class="mb-4 bold txt-bianco flex align-center">
+                <h1 class="mb-4 bold txt-bianco nav-item align-center">
                     <img src="img/logo-small.svg" alt="Logo Spotify" class="mr-2 w-25">
-                    Spotify
+                    <span id="spotify-text">Spotify</span>
                 </h1>
             
                 <!-- Voci principali -->
                 <ul class="list-none">
-                    <li class="mb-2 flex align-center  nav-item home-item">
+                    <li class="mb-2 flex align-center nav-item home-item">
                         <img src="img/home.svg" alt="Icona Home" class="mr-2 w-15"> 
                         <a href="#" class="txt-grigio decoration-no">Home</a>
                     </li>
@@ -39,31 +39,37 @@
                 </ul>
                 
             
-                <!-- Sezioni separate, esempio Playlist personalizzate -->
-                <h3 class="mt-5 mb-2 bold txt-bianco flex align-center ml-2">PLAYLIST</h3>
-                <ul class="list-none ml-2">
-                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no"> <i class="fas fa-plus txt-nero mr-2 bg-grigio"></i>Crea Playlist </a></li>
+                <!--Playlist personalizzate -->
+                <h3 class="mt-5 mb-2 bold txt-bianco flex align-center ml-2 Playlist1">PLAYLIST</h3>
+                <h3 class="Playlist1" ><a href="#" class="txt-grigio decoration-no"> <i class="fas fa-plus txt-nero mr-2 bg-grigio xL-font w-15 h-15"></i>Crea Playlist </a></h3>
+
+                <ul class="list-none ml-2 Playlist">
                     <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
                     <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
                     <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
                     <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
                     <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
-                    
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
+                    <li class="mb-2"><a href="#" class="txt-grigio decoration-no light">Nuova Playlist</a></li>
                 </ul>
     
             </div>
+                <!--fine della navbar sinistra -->
 
-            <div class="align-center " >
-                <h5 class="bold txt-grigio flex align-center">
-                    <img src="img/download.svg" alt="installa" class="mr-2" style="width: 12%;">
-                    installa app
-                </h5>
-                <hr class="mb-2 " style="height: 1px;"> 
-                <h5 class="bold txt-bianco  flex align-center">
-                    <img src="img/profile.svg" alt="profilo" class="mr-2 bg-grigio border-cerchio " style="width: 12%; color: white;">
-                    Jhon Paul
-                </h5>
-            </div>
+            <ul class="list-none">
+                <li class="mb-2 flex align-center nav-item ">
+                    <img src="img/download.svg" alt="Icona download" class=" w-10 "> 
+                    <a href="#" class="txt-grigio decoration-no">installa app</a>
+                </li>
+                <hr class="mb-2 divisore " style="height: 1px;"> 
+                <li class="mb-2 flex align-center nav-item ">
+                    <img src="img/profile.svg" alt="Icona profilo" class="mr-2 w-15 profilo-img bg-grigio border-cerchio"> 
+                    <a href="#" class="txt-grigio decoration-no">John Doe</a>
+                </li>
+                
+            </ul>
+
         </nav>
 
         <!--sezione laterale destra con artisti-->
@@ -71,10 +77,11 @@
             <div class=" p-3 bg-grigioblu text-right">
                 <button class=" bg-grigioblu p-2 txt-bianco shadow border border-radius">Effettua l'upgrade</button>
             </div>
-
+            
+            <!--navbar destra-->
             
             <nav class="p-3 text-center">
-                <ul class="list-none flex justify-center">
+                <ul class="list-none nav-selection">
                     <li class="mr-3"><a href="#" class="txt-grigio decoration-no L-font green-item">IN EVIDENZA</a></li>
                     <li class="mr-3"><a href="#" class="txt-grigio decoration-no ">PODCAST</a></li>
                     <li class="mr-3"><a href="#" class="txt-grigio decoration-no ">CLASSIFICHE</a></li>
@@ -83,15 +90,16 @@
                     <li><a href="#" class="txt-grigio decoration-no L-font" >SCOPRI</a></li>
                 </ul>
             </nav>
-
-            <section class="p-3">
+             
+            <!--recently played -->
+            <section class="p-3 ">
                 
-                <h2 class="mb-4 bold txt-bianco">Recentli Played</h2>
+                <h2 class="mb-4 bold txt-bianco">Recently Played</h2>
             
                 <!-- Cards -->
-                <div class="flex">
+                <div class="cards-container">
                     <!-- Card 1 -->
-                    <div class="card mr-4 w-15">
+                    <div class="card  w-15">
                         <div class="image-container">
                             <img src="img/metal_lifting.jpg" alt="Immagine Canzone 1" class="w-100">
                             <i class="fa-regular fa-circle-play play-icon xL-font"></i>
@@ -101,7 +109,7 @@
                     </div>
                     
                     <!-- Card 2 -->
-                    <div class="card mr-4 w-15">
+                    <div class="card   w-15">
                         <div class="image-container">
                             <img src="img/stranger.jpeg" alt="Immagine Canzone 1" class="w-100">
                             <i class="fa-regular fa-circle-play play-icon xL-font"></i>
@@ -111,7 +119,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="card mr-4 w-15">
+                    <div class="card  w-15">
                         <div class="image-container">
                             <img src="img/aquietplace.jpeg" alt="Immagine Canzone 1" class="w-100">
                             <i class="fa-regular fa-circle-play play-icon xL-font"></i>
@@ -121,7 +129,7 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="card mr-4 w-15">
+                    <div class="card  w-15">
                         <div class="image-container">
                             <img src="img/split.jpeg" alt="Immagine Canzone 1" class="w-100">
                             <i class="fa-regular fa-circle-play play-icon xL-font"></i>
@@ -131,7 +139,7 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="card mr-4 w-15">
+                    <div class="card  w-15">
                         <div class="image-container">
                             <img src="img/cure.jpeg" alt="Immagine Canzone 1" class="w-100">
                             <i class="fa-regular fa-circle-play play-icon xL-font"></i>
@@ -141,7 +149,7 @@
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="card mr-4 w-15">
+                    <div class="card  w-15">
                         <div class="image-container">
                             <img src="img/sinister.jpeg" alt="Immagine Canzone 1" class="w-100">
                             <i class="fa-regular fa-circle-play play-icon xL-font"></i>
@@ -154,10 +162,10 @@
 
                 </div>
             </section>
-
+                <!--creato per john-->
             <section class="p-3">
                 
-                <h2 class=" bold txt-bianco">Creato for Jhon</h2>
+                <h2 class=" bold txt-bianco">Creato for John Doe</h2>
                 <p class="txt-grigio mb-4">Più ascolti, più accurati saranno i suggerimenti </p>
             
                 <!-- Cards -->
@@ -178,24 +186,24 @@
                 </div>
             </section>
 
-
+                <!--Artisti popolari -->
             <section class="p-3">
                 
                 <h2 class=" bold txt-bianco">Artisti più popolari</h2>
-                <p class="txt-grigio mb-4">AutorePiù ascolti, più accurati saranno i suggerimenti  </p>
+                <p class="txt-grigio mb-4">Autore Più ascolti, più accurati saranno i suggerimenti  </p>
             
                 <!-- Cards -->
                 <div class="flex">
                     <!-- Card 1 -->
                     <div class="card mr-4 w-15">
-                        <img src="img/einaudi.jpeg" alt="Immagine Canzone 1" class="w-100 border-cerchio">
+                        <img src="img/einaudi.jpeg" alt="Immagine Canzone 1" class="w-75 border-cerchio">
                         <h3 class="mt-2 bold txt-bianco">Ludovico Einaudi </h3>
                         
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="card w-15 mr-3">
-                        <img src="img/youg.jpeg" alt="Immagine Canzone 1" class="w-100 border-cerchio">
+                        <img src="img/youg.jpeg" alt="Immagine Canzone 1" class="w-75 border-cerchio">
                         <h3 class="mt-2 bold txt-bianco">Lana del Rey </h3>
                         
                     </div>    
@@ -212,7 +220,9 @@
         
     </main>
     
-    <footer class="flex align-center">
+    <footer class="flex  align-center">
+
+        <!--footer left -->
 
         <div class="footer-left h-100 flex align-center">    
             <img src="img/sinister.jpeg" alt="song-image" class="h-75 w-15">
@@ -226,6 +236,7 @@
             </div>   
         </div>
 
+            <!--footer mid -->
         <div class="footer-mid h-100 flex column align-center">
             <div class="footer-mid-top flex align-center justify-center h-50 w-45 mt-2">
                 <i class="fa-solid fa-shuffle L-font"></i>
@@ -249,7 +260,8 @@
                 </div>
             </div>
         </div>
-
+             
+            <!--footer right -->
         <div class="footer-right flex align-center justify-end">
             <i class="fas fa-list s-font pr-3"></i>
             <i class="fas fa-desktop s-font pr-3"></i>
